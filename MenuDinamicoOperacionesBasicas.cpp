@@ -14,7 +14,7 @@ void main(){
  menu();
 }
 
-// Menú de opciones.
+// MenÃº de opciones.
 void menu(){
  int x=35, y=10;
  clrscr();
@@ -27,7 +27,7 @@ void menu(){
  navegarMenu(x,y);
 }
 
-// Metodo para navegar en las opciones del menú dinamicamente con las flechas de seleccion arriba y abajo.
+// Metodo para navegar en las opciones del menÃº dinamicamente con las flechas de seleccion arriba y abajo.
 void navegarMenu(int x, int y){
 	char key;
    int cont = 1;
@@ -54,19 +54,19 @@ void navegarMenu(int x, int y){
    // Validamos la opcion del usuario con el valor que tenga el contador
    clrscr();
    if(cont == 5) { exit(0); } 										  // Opcion "Salir"
-   xy(x-5,y);printf("Numero a: ");scanf("%f", &a);    	     // Pedimos los números para
+   xy(x-5,y);printf("Numero a: ");scanf("%f", &a);    	     // Pedimos los nÃºmeros para
    xy(x-5,y+1);printf("Numero b: ");scanf("%f", &b);  		  // realizar la operacion seleccionada
    if(cont == 1) { resultado = suma(a,b);}               	  // Opcion "Suma"
    if(cont == 2) { resultado = resta(a,b);}      		  	  	  // Opcion "Resta"
    if(cont == 3) { resultado = multiplicacion(a,b);}     	  // Opcion "Multiplicacion"
    if(cont == 4) { resultado = division(a,b);}           	  // Opcion "Division"
 
-   xy(x-5,y+3);printf("El resuldato es %.2f ",resultado);
-   getch();                                                   // Mostramos de nuevo el menú de opciones
+   xy(x-5,y+3);printf("El resultado es %.2f ",resultado);
+   getch();                                                   // Mostramos de nuevo el menÃº de opciones
    menu();
 }
 
-// Metodos de las operaciones matemáticas básicas
+// Metodos de las operaciones matemÃ¡ticas bÃ¡sicas
 float suma(float a, float b){ return a+b; }
 float resta(float a, float b){ return a-b; }
 float multiplicacion(float a, float b){ return a*b; }
